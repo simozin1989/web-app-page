@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stayle.css">
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="/images/logo.png" alt="">
+            </div>
+            <div class="navLinks">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+
+            </div>
+        </nav>
+        <div class="info">
+            <div class="overlay">
+
+            </div>
+            <img src="/images/mobile.png" class="mobel">
+            <div id="circle">
+                <div class="feature one">
+                    <img src="/images/camera.png" alt="">
+                    <div>
+                        <h1>Camera</h1>
+                        <p>How To Make A Website Usin</p>
+                    </div>
+                </div>
+                <div class="feature tow">
+                    <img src="/images/processor.png" alt="">
+                    <div>
+                        <h1>processor</h1>
+                        <p>How To Make A Website Usin</p>
+                    </div>
+                </div>
+                <div class="feature three">
+                    <img src="/images/display.png" alt="">
+                    <div>
+                        <h1>display</h1>
+                        <p>How To Make A Website Usin</p>
+                    </div>
+                </div>
+                <div class="feature faur">
+                    <img src="/images/battery.png" alt="">
+                    <div>
+                        <h1>battery</h1>
+                        <p>How To Make A Website Usin</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <img src="/images/arrow.png" id="upIcon">
+            <h3>Features</h3>
+            <img src="/images/arrow.png" id="downIcon">
+        </div>
+    </div>
+
+    <script>
+        var  circle = document.getElementById("circle");
+        var  upIcon = document.getElementById("upIcon");
+        var  downIcon = document.getElementById("downIcon");
+        var roteteValue  = circle.style.transform;
+        var roteteSum;
+        upIcon.onclick  = function(){
+            roteteSum =  roteteValue + "rotate(-90deg)";
+            circle.style.transform = roteteSum;
+            roteteValue = roteteSum;
+        }
+        downIcon.onclick  = function(){
+            roteteSum =  roteteValue + "rotate(90deg)";
+            circle.style.transform = roteteSum;
+            roteteValue = roteteSum;
+        }
+    </script>
+</body>
+
+</html>
